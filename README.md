@@ -203,14 +203,15 @@ Where R is the `person_visits` table with a filter on January 2, 2022, S is also
 ## Exercise 05 — Let’s calculate a discount price for each person
 
 
-| Exercise 05: Let’s calculate a discount price for each person |                                                                                                                          |
-|---------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| Turn-in directory                     | ex05                                                                                                                     |
-| Files to turn-in                      | `day04_ex05.sql`                                                                                 |
-| **Allowed**                               |                                                                                                                          |
-| Language                        | ANSI SQL                                                                                              |
+| Exercise 05: Let’s calculate a discount price for each person |                  |
+|---------------------------------------------------------------|------------------|
+| Turn-in directory                                             | ex05             |
+| Files to turn-in                                              | `day04_ex05.sql` |
+| **Allowed**                                                   |                  |
+| Language                                                      | ANSI SQL         |
+| SQL Syntax Construction                                       | `round(...)`     |
 
-Please create a Database View `v_price_with_discount` that returns the orders of a person with person name, pizza name, real price and calculated column `discount_price` (with applied 10% discount and satisfying formula `price - price*0.1`). Please sort the result by person names and pizza names and convert the `discount_price` column to integer type. See a sample result below.
+Please create a Database View `v_price_with_discount` that returns the orders of a person with person name, pizza name, real price and calculated column `discount_price` (with applied 10% discount and satisfying formula `price - price*0.1`). Please sort the result by person names and pizza names and round the `discount_price` column to integer. See a sample result below.
 
 
 | name |  pizza_name | price | discount_price |
